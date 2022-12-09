@@ -35,7 +35,7 @@ h1 {
 /*-------------------------------------------
 SELECT ALL SQUARES PARAGRAPHS IN THE ARRAY
 --------------------------------------------*/
-.squares.squares:nth-child(-n+4) P{
+.squares.squares:nth-child(-n+4) p {
     font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
     font-size: 1.5em;
     font-weight: 900;
@@ -68,7 +68,12 @@ SELECT ALL SQUARES PARAGRAPHS IN THE ARRAY
       HOVER, TRANSLATE & TRANSOFRM EFFECTS
 ------------------------------------------------*/
 .conatiner .squares:nth-child(-n+4) :hover {
-    background-image: url("./Icons/icons2.png");
+background-image: url("./Icons/icons2.png");
+    transform: scale(.5);
+    animation-name: race;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(2.5, .2, .3, 2);
 }
 
 .squares:nth-child(1):hover {
@@ -85,4 +90,17 @@ SELECT ALL SQUARES PARAGRAPHS IN THE ARRAY
 
 .squares:nth-child(4):hover {
     background: #77b800;
+}
+
+/*--------------------------------------
+            ANIMATION EFFECT
+--------------------------------------*/
+@keyframes race {
+    0%, 100% {
+        transfrom: translateY(0px);
+        background-image: url("./Icons/icons2.png");
+    }
+    50% {
+        transfrom: translateY(300px);
+    }
 }
