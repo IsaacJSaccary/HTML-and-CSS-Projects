@@ -68,7 +68,7 @@ SELECT ALL SQUARES PARAGRAPHS IN THE ARRAY
       HOVER, TRANSLATE & TRANSOFRM EFFECTS
 ------------------------------------------------*/
 .conatiner .squares:nth-child(-n+4) :hover {
-background-image: url("./Icons/icons2.png");
+    background-image: url("./Icons/icons2.png");
     transform: scale(.5);
     animation-name: race;
     animation-duration: 2.5s;
@@ -91,7 +91,6 @@ background-image: url("./Icons/icons2.png");
 .squares:nth-child(4):hover {
     background: #77b800;
 }
-
 /*--------------------------------------
             ANIMATION EFFECT
 --------------------------------------*/
